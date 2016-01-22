@@ -1,0 +1,52 @@
+
+* {	
+    margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    background: #ADD8E6;
+    height: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 5px solid blue;  
+    align-items: center; // Center vertically
+// margin-left: auto; // Center horizontally
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+header ul{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  margin-left: auto;  /*Moves menu to right side (weird but it works?)*/
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+header li{
+  margin-right: 10px;
+  display: inline;
+}
+
+.content {
+    flex: 1;
+    margin-top: 100px;
+}
+
+.main-footer {
+    border-top: 3px solid blue;
+	text-align: center;
+	background: #d9e4ea;
+    height: 40px; 
+}
